@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="153.419">
+    <testcase classname="feature to test Modules functionality" name="Verify with Add recover farmers list from the grid" time="152.795">
+        <failure message="Expected condition failed: waiting for visibility of all elements located by By.xpath: //ul[contains(@id, 'ul-')]/li (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.62, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bd90e9e83ccdf6a87260e4293e7aec74" type="org.openqa.selenium.TimeoutException"><![CDATA[Given the user signin with the Respective role details......................passed
+Then the page will Navigate to the Dashboard screen of the main page........passed
+Then click on the menu as a Activities module...............................passed
+And click on the Recovery farmer details screen.............................passed
+And check with the From date selection from the Recovery farmer details screen.passed
+Then check with the click on the search button..............................passed
+When click on the Add recovery farmer action button.........................passed
+And check with the click on the Search button...............................passed
+Then select farmer from the auto suggestion key list........................passed
+And check with the add recoveryfarmers by using Add action button...........failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //ul[contains(@id, 'ul-')]/li (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.62, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd90e9e83ccdf6a87260e4293e7aec74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at pages.Recoveryfarmerdetails.check_with_the_add_recoveryfarmers_by_using_Add_action_button(Recoveryfarmerdetails.java:154)
+	at stepdefinition.Recoveryfarmerdetails_steps.check_with_the_add_recoveryfarmers_by_using_Add_action_button(Recoveryfarmerdetails_steps.java:50)
+	at ✽.check with the add recoveryfarmers by using Add action button(file:///D:/sample/Oilpalm/feature/Recoveryfarmerdetails.feature:83)
+]]></failure>
+    </testcase>
+</testsuite>
