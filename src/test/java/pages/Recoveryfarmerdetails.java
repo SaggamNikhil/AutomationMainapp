@@ -147,7 +147,7 @@ public class Recoveryfarmerdetails extends DriverFactory  {
 	public void check_with_the_add_recoveryfarmers_by_using_Add_action_button() throws Throwable {
 		utilities.webDriverWait(driver, Recovery_farmer_one_clk);
         driver.findElement(Recovery_farmer_one_clk).sendKeys("145");
-        utilities.MaximumWait(driver);
+       // utilities.MaximumWait(driver);
 
       
 }
