@@ -44,7 +44,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -54,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jun 20, 2024 04:56:30 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jun 24, 2024 11:39:58 am</span>
 			</a>
 		</ul>
 	</div>
@@ -70,7 +69,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -83,7 +81,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@OilPalm_Requirement</a></li>
-					<li><a href='#'>@Recoveryfarmer_data_valid9</a></li>
+					<li><a href='#'>@PartialUprootment_Data1</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -124,10 +122,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -138,10 +136,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -154,10 +152,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='95%'><span class='strong'>19</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>20</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -177,11 +175,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>feature to test Modules functionality</span>
-						<span class='test-time'>Jun 20, 2024 04:56:38 pm</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jun 24, 2024 11:40:05 am</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -190,18 +188,18 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@OilPalm_Requirement</span>
-		<span class='category label'>@Recoveryfarmer_data_valid9</span>
+		<span class='category label'>@PartialUprootment_Data1</span>
 	</div>
-	<span class='duration right label'>0h 2m 24s+330ms</span>
+	<span class='duration right label'>0h 1m 56s+295ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Verify with Add recover farmers list from the grid</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify with the Plot details by Crop in Left out area details</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.the_user_signin_with_the_Respective_role_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user signin with the Respective role details</div>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.the_user_signin_with_the_Respective_role_credential_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user signin with the Respective role credential details</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='5' class='node * pass' status='pass'>
@@ -212,7 +210,7 @@
 			<div class="node-step"></div>
 		</li>
 		<li test-id='6' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.the_page_will_Navigate_to_the_Dashboard_screen_of_the_main_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the page will Navigate to the Dashboard screen of the main page</div>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.the_page_will_Navigate_to_the_Dashboard_screen_of_the_main_pages()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the page will Navigate to the Dashboard screen of the main pages</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='7' class='node * pass' status='pass'>
@@ -223,7 +221,7 @@
 			<div class="node-step"></div>
 		</li>
 		<li test-id='8' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.click_on_the_menu_as_a_Activities_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on the menu as a Activities module</div>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.click_on_the_dashboard_menu_as_Activities_module_name()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on the dashboard menu as Activities module name</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='9' class='node * pass' status='pass'>
@@ -234,7 +232,7 @@
 			<div class="node-step"></div>
 		</li>
 		<li test-id='10' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.click_on_the_Recovery_farmer_details_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on the Recovery farmer details screen</div>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.click_on_the_Partial_Uprootment_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on the Partial Uprootment screen</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='11' class='node * pass' status='pass'>
@@ -244,8 +242,8 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='12' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_the_From_date_selection_from_the_Recovery_farmer_details_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And check with the From date selection from the Recovery farmer details screen</div>
+		<li test-id='12' class='node then pass' status='pass'>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.click_on_the_search_farmer_input_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on the search farmer input field</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='13' class='node * pass' status='pass'>
@@ -255,8 +253,8 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='14' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_the_click_on_the_search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with the click on the search button</div>
+		<li test-id='14' class='node and pass' status='pass'>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.Select_farmer_from_the_auto_suggestion_keywords_list()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select farmer from the auto suggestion keywords list</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='15' class='node * pass' status='pass'>
@@ -266,8 +264,8 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='16' class='node when pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.click_on_the_Add_recovery_farmer_action_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When click on the Add recovery farmer action button</div>
+		<li test-id='16' class='node and pass' status='pass'>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.check_with_the_selected_farmer_plot_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And check with the selected farmer plot details</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='17' class='node * pass' status='pass'>
@@ -277,8 +275,8 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='18' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_the_click_on_the_Search_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And check with the click on the Search button</div>
+		<li test-id='18' class='node then pass' status='pass'>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.check_with_the_Total_plot_area_input_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with the Total plot area input details</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='19' class='node * pass' status='pass'>
@@ -288,8 +286,8 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='20' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.select_farmer_from_the_auto_suggestion_key_list()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then select farmer from the auto suggestion key list</div>
+		<li test-id='20' class='node and pass' status='pass'>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.check_with_the_Total_Palm_area_input_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And check with the Total Palm area input details</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='21' class='node * pass' status='pass'>
@@ -299,20 +297,9 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='22' class='node and fail' status='fail'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_the_add_recoveryfarmers_by_using_Add_action_button()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>And check with the add recoveryfarmers by using Add action button</div>
-			<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //ul[contains(@id, 'ul-')]/li (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.62, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd90e9e83ccdf6a87260e4293e7aec74
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at pages.Recoveryfarmerdetails.check_with_the_add_recoveryfarmers_by_using_Add_action_button(Recoveryfarmerdetails.java:154)
-	at stepdefinition.Recoveryfarmerdetails_steps.check_with_the_add_recoveryfarmers_by_using_Add_action_button(Recoveryfarmerdetails_steps.java:50)
-	at ✽.check with the add recoveryfarmers by using Add action button(file:///D:/sample/Oilpalm/feature/Recoveryfarmerdetails.feature:83)
-</textarea>
+		<li test-id='22' class='node then pass' status='pass'>
+			<div class="step-name" title="stepdefinition.PartialUprootment_steps.check_with_the_Crop_in_Left_out_area_dropdown_selection()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with the Crop in Left out area dropdown selection</div>
+			<div class="node-step"></div>
 		</li>
 		<li test-id='23' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
@@ -367,13 +354,13 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 					<div class='category-heading'>
 						<span class='category-name'>@OilPalm_Requirement</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -387,14 +374,14 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 20, 2024 04:56:38 pm</td>
+										<td>Jun 24, 2024 11:40:05 am</td>
 										<td class='linked' test-id='1'>feature to test Modules functionality</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 20, 2024 04:56:38 pm</td>
-										<td class='linked' test-id='2'>Verify with Add recover farmers list from the grid</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Jun 24, 2024 11:40:05 am</td>
+										<td class='linked' test-id='2'>Verify with the Plot details by Crop in Left out area details</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -403,15 +390,15 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Recoveryfarmer_data_valid9</span>
+						<span class='category-name'>@PartialUprootment_Data1</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -425,9 +412,9 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 20, 2024 04:56:38 pm</td>
-										<td class='linked' test-id='2'>Verify with Add recover farmers list from the grid</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Jun 24, 2024 11:40:05 am</td>
+										<td class='linked' test-id='2'>Verify with the Plot details by Crop in Left out area details</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -443,73 +430,7 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jun 20, 2024 04:58:05 pm</td>
-										<td class='linked' test-id='22'>And check with the add recoveryfarmers by using Add action button</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //ul[contains(@id, 'ul-')]/li (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.62, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd90e9e83ccdf6a87260e4293e7aec74
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at pages.Recoveryfarmerdetails.check_with_the_add_recoveryfarmers_by_using_Add_action_button(Recoveryfarmerdetails.java:154)
-	at stepdefinition.Recoveryfarmerdetails_steps.check_with_the_add_recoveryfarmers_by_using_Add_action_button(Recoveryfarmerdetails_steps.java:50)
-	at ✽.check with the add recoveryfarmers by using Add action button(file:///D:/sample/Oilpalm/feature/Recoveryfarmerdetails.feature:83)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -535,19 +456,19 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 20, 2024 04:56:30 pm</div>
+					<div class='panel-lead'>Jun 24, 2024 11:39:58 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 20, 2024 04:59:04 pm</div>
+			 		<div class='panel-lead'>Jun 24, 2024 11:42:03 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 34s+393ms</div>
+					<div class='panel-lead'>0h 2m 5s+657ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -564,20 +485,20 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 						</tr>
 						<tr>
 							<td>@OilPalm_Requirement</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 						<tr>
-							<td>@Recoveryfarmer_data_valid9</td>
-							<td>0</td>
+							<td>@PartialUprootment_Data1</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -592,38 +513,38 @@ Session ID: bd90e9e83ccdf6a87260e4293e7aec74
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				grandChildCount: 20,
-				passGrandChild: 19,
-				failGrandChild: 1,
+				passGrandChild: 20,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "feature to test Modules functionality":144.33
+			        "feature to test Modules functionality":116.295
 			};
 		</script>
 	

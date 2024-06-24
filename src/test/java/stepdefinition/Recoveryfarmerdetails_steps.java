@@ -45,8 +45,44 @@ public class Recoveryfarmerdetails_steps {
 	public void select_farmer_from_the_auto_suggestion_key_list() throws Throwable {
 		Recoveryfarmerdetails.select_farmer_from_the_auto_suggestion_key_list();
 	}
+	@Then ("^select duplicate Main farmer from the auto suggestion key list$")
+	public void select_duplicate_Main_farmer_from_the_auto_suggestion_key_list() throws Throwable {
+		Recoveryfarmerdetails.select_duplicate_Main_farmer_from_the_auto_suggestion_key_list();
+	}
 	@And ("^check with the add recoveryfarmers by using Add action button$")
 	public void check_with_the_add_recoveryfarmers_by_using_Add_action_button() throws Throwable {
 		Recoveryfarmerdetails.check_with_the_add_recoveryfarmers_by_using_Add_action_button();
+	}
+	@And ("^click on the Save button for farmer one$")
+	public void click_on_the_Save_button_for_farmer_one() throws Throwable {
+		Recoveryfarmerdetails.click_on_the_Save_button_for_farmer_one();
+	}
+	@Then ("^check with active grid Edit button click$")
+	public void check_with_active_grid_Edit_button_click() throws Throwable {
+		Recoveryfarmerdetails.check_with_active_grid_Edit_button_click();
+	}
+	@And ("^check with the Add button with update details$")
+	public void check_with_the_Add_button_with_update_details() throws Throwable {
+		Recoveryfarmerdetails.check_with_the_Add_button_with_update_details();
+	}
+	@Then ("^check with the Search recovery farmer$")
+	public void check_with_the_Search_recovery_farmer() throws Throwable {
+		Recoveryfarmerdetails.check_with_the_Search_recovery_farmer();
+	}
+	@And ("^click on the update button$")
+	public void click_on_the_update_button() throws Throwable {
+		Recoveryfarmerdetails.click_on_the_update_button();
+	}
+	@Then ("^check with same recover farmer into another index$")
+	public void check_with_same_recover_farmer_into_another_index() throws Throwable {
+		Recoveryfarmerdetails.check_with_same_recover_farmer_into_another_index();
+	}
+	@And ("^click on the Cancel button the page will be navigated to the Recovery farmer list screen$")
+	public void click_on_the_Cancel_button_the_page_will_be_navigated_to_the_Recovery_farmer_list_screen() throws Throwable {
+		Recoveryfarmerdetails.click_on_the_Cancel_button_the_page_will_be_navigated_to_the_Recovery_farmer_list_screen();
+	}
+	@Then ("^check with grid delete action button$")
+	public void check_with_grid_delete_action_button() throws Throwable {
+		Recoveryfarmerdetails.check_with_grid_delete_action_button();
 	}
 }

@@ -27,8 +27,19 @@ public class Recoveryfarmerdetails extends DriverFactory  {
   	By With_out_search_farmer  = By.xpath("//div[@ng-messages='addForm.autocompleteField.$error']");
   	By Auto_suggestions        = By.xpath("//ul[contains(@class, 'md-autocomplete-suggestions')]/li"); 
   	By Recovery_farmer_one_clk = By.xpath("(//input[@aria-label='Select Farmer'])[2]");
-  	
-  	
+  	By Select_recovery_f_one   = By.xpath("(//md-autocomplete-parent-scope[@class='ng-scope'])[4]");
+  	By farmer_one_save         = By.xpath("//button[@ng-click='SaveRecoveyFarmers()']");
+  	By Click_Edit_button       = By.xpath("(//a[@href='#/EditRecoveryFarmers'])[2]");
+  	By Click_on_add_button     = By.xpath("//button[@ng-click='addRecoveryFarmer($index)']");
+  	By Search_recovery_f_one   = By.xpath("//input[@aria-label='Select Farmer']"); 
+  	By select_farmer           = By.xpath("(//li[@ng-click='$mdAutocompleteCtrl.select($index)'])[1]");
+  	By update_click            = By.xpath("//button[@ng-click='SaveRecoveyFarmers()']");
+  	By Select_same_recovery_f  = By.xpath("//input[@aria-label='Select Farmer']");
+  	By Select_recovery_f_opt   = By.xpath("(//md-autocomplete-parent-scope[@class='ng-scope'])[1]");
+  	By addRecoveryFarmerButton = By.cssSelector("button.btn.btn-sm.btn-theme[ng-click='addRecoveryFarmer($index)']");
+  	By Cancel_click_btn        = By.xpath("//a[@ng-click='Cancel()']");
+  	By Delete_button_click     = By.xpath("(//button[@ng-click='deleteRecoverFarmer(row)'])[1]");
+    By Confirmation_del_action = By.xpath("//button[@ng-click='dialog.hide()']");
   	
   	
   	
@@ -108,7 +119,7 @@ public class Recoveryfarmerdetails extends DriverFactory  {
 		utilities.webDriverWait(driver, Search_farmer_click);
 		driver.findElement(Search_farmer_click).click();
 		utilities.MaximumWait(driver);
-		driver.findElement(Search_farmer_click).sendKeys("123");
+		driver.findElement(Search_farmer_click).sendKeys("145");
 		utilities.MaximumWait(driver);
 		driver.findElement(Search_farmer_click).clear();
 		utilities.MaximumWait(driver);
@@ -122,7 +133,7 @@ public class Recoveryfarmerdetails extends DriverFactory  {
 	public void select_farmer_from_the_auto_suggestion_key_list() throws Throwable {
 		utilities.webDriverWait(driver, Search_farmer_click);
         WebElement searchField = driver.findElement(Search_farmer_click);
-        searchField.sendKeys("145");
+        searchField.sendKeys("159");
         utilities.MaximumWait(driver);
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -131,7 +142,7 @@ public class Recoveryfarmerdetails extends DriverFactory  {
             System.out.println("Number of suggestions found: " + suggestions.size());
             for (WebElement suggestion : suggestions) {
                 System.out.println("Suggestion text: " + suggestion.getText());
-                if (suggestion.getText().contains("145")) {
+                if (suggestion.getText().contains("159")) {
                     suggestion.click();
                     break;
                 }
@@ -142,14 +153,127 @@ public class Recoveryfarmerdetails extends DriverFactory  {
         utilities.MaximumWait(driver);
     }
 
+	public void select_duplicate_Main_farmer_from_the_auto_suggestion_key_list() throws Throwable {
+		WebElement searchField = driver.findElement(Search_farmer_click);
+		searchField.sendKeys("146");
+		utilities.MaximumWait(driver);
 
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		boolean suggestionClicked = false;
 
+		try {
+		    do {
+		        List<WebElement> suggestions = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(Auto_suggestions));
+		        System.out.println("Number of suggestions found: " + suggestions.size());
+		        
+		        for (WebElement suggestion : suggestions) {
+		            System.out.println("Suggestion text: " + suggestion.getText());
+		            if (suggestion.getText().contains("177")) {
+		                suggestion.click();
+		                suggestionClicked = true;
+		                break;
+		            }
+		        }
+
+		        if (!suggestionClicked) {
+		            // Clear the search field and try again with a new value
+		            searchField.clear();
+		            searchField.sendKeys("177");
+		        }
+
+		    } while (!suggestionClicked);
+		} catch (Exception e) {
+		    System.out.println("Exception while waiting for suggestions: " + e.getMessage());
+		}
+
+		utilities.MaximumLongWait(driver);
+
+	}
 	public void check_with_the_add_recoveryfarmers_by_using_Add_action_button() throws Throwable {
 		utilities.webDriverWait(driver, Recovery_farmer_one_clk);
-        driver.findElement(Recovery_farmer_one_clk).sendKeys("145");
+        driver.findElement(Recovery_farmer_one_clk).sendKeys("149");
+        utilities.MaximumWait(driver);
+        driver.findElement(Select_recovery_f_one).click();
+        utilities.MaximumWait(driver);
+}
+
+	public void click_on_the_Save_button_for_farmer_one() throws Throwable {
+		utilities.webDriverWait(driver, farmer_one_save);
+        driver.findElement(farmer_one_save).click();
+        utilities.MaximumWait(driver);
+	}
+
+
+
+	public void check_with_active_grid_Edit_button_click() throws Throwable {
+		utilities.webDriverWait(driver, Click_Edit_button);
+        driver.findElement(Click_Edit_button).click();
+        utilities.MaximumWait(driver);
+	}
+
+
+
+	public void check_with_the_Add_button_with_update_details() throws Throwable {
+		utilities.webDriverWait(driver, Click_on_add_button);
+        driver.findElement(Click_on_add_button).click();
+        utilities.MaximumWait(driver);
+	}
+
+
+
+	public void check_with_the_Search_recovery_farmer() throws Throwable {
+		utilities.webDriverWait(driver, Search_recovery_f_one);
+        driver.findElement(Search_recovery_f_one).click();
+        utilities.MaximumWait(driver);
+        driver.findElement(Search_recovery_f_one).sendKeys("169");
+        utilities.MaximumWait(driver);
+        driver.findElement(select_farmer).click();
         utilities.MaximumWait(driver);
 
-      
-}
-}
+
+	}
+
+
+
+	public void click_on_the_update_button() throws Throwable {
+		utilities.webDriverWait(driver, update_click);
+        driver.findElement(update_click).click();
+        utilities.MaximumWait(driver);
+	}
+
+
+
+	public void check_with_same_recover_farmer_into_another_index() throws Throwable {
+      String[] farmerNames = {"Vengala Reddy Nukaraju", "Raju Achanta", "farmer plot three", "Sivanarayana Reddy jakka",};
+        for (String farmerName : farmerNames) {
+            utilities.webDriverWait(driver, Select_same_recovery_f);
+            driver.findElement(Select_same_recovery_f).click();
+            utilities.MaximumWait(driver);
+            driver.findElement(Select_same_recovery_f).sendKeys(farmerName);
+            utilities.MaximumWait(driver);
+            driver.findElement(Select_recovery_f_opt).click();
+            utilities.MaximumWait(driver);
+            driver.findElement(addRecoveryFarmerButton).click();
+            utilities.MaximumWait(driver);
+        }
+    }
+
+
+
+	public void click_on_the_Cancel_button_the_page_will_be_navigated_to_the_Recovery_farmer_list_screen() throws Throwable {
+		utilities.webDriverWait(driver, Cancel_click_btn);
+        driver.findElement(Cancel_click_btn).click();
+        utilities.MaximumWait(driver);
+	}
+
+
+
+	public void check_with_grid_delete_action_button() throws Throwable {
+		utilities.webDriverWait(driver, Delete_button_click);
+        driver.findElement(Delete_button_click).click();
+        utilities.MaximumWait(driver);
+        driver.findElement(Confirmation_del_action).click();
+        utilities.MaximumWait(driver);
+	}
+	}
 
