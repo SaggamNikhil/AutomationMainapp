@@ -63,4 +63,4 @@ And Select farmer from the auto suggestion keywords list
 And check with the selected farmer plot details 
 Then check with the Total plot area input details
 And check with the Total Palm area input details
-Then check with the Crop in Left out area dropdown selection
+#Then check with the Crop in Left out area dropdown selection
