@@ -3,6 +3,7 @@ package stepdefinition;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pages.PartialUprootment;
 
 public class PartialUprootment_steps {
@@ -47,5 +48,65 @@ public class PartialUprootment_steps {
 	@Then ("^check with the Crop in Left out area dropdown selection$")
 	public void check_with_the_Crop_in_Left_out_area_dropdown_selection() throws Throwable{
 		PartialUprootment.check_with_the_Crop_in_Left_out_area_dropdown_selection();
+	}
+	@And ("^Check with the Survey number input validations details$")
+	public void Check_with_the_Survey_number_input_validations_details() throws Throwable {
+		PartialUprootment.Check_with_the_Survey_number_input_validations_details();
+	}
+	@Then ("^check with the CropIncome Dropdown selection$")
+	public void check_with_the_CropIncome_Dropdown_selection() throws Throwable {
+		PartialUprootment.check_with_the_CropIncome_Dropdown_selection();
+	}
+	@And ("^check with the Is Boundary fencing checkbox selection field$")
+	public void check_with_the_Is_Boundary_fencing_checkbox_selection_field() throws Throwable {
+		PartialUprootment.check_with_the_Is_Boundary_fencing_checkbox_selection_field();
+	}
+	@And ("^check with the Is plot handled by care taker checkbox selection field$")
+	public void check_with_the_Is_plot_handled_by_care_taker_checkbox_selection_field() throws Throwable {
+		PartialUprootment.check_with_the_Is_plot_handled_by_care_taker_checkbox_selection_field();
+	}
+	@Then ("^Validate with the Caretaker name input field$")
+	public void Validate_with_the_Caretaker_name_input_field() throws Throwable {
+		PartialUprootment.Validate_with_the_Caretaker_name_input_field();
+	}
+	@And ("^validate with the Caretaker mobile number details$")
+	public void validate_with_the_Caretaker_mobile_number_details() throws Throwable {
+		PartialUprootment.validate_with_the_Caretaker_mobile_number_details();
+		}
+	@Then ("^check with the landmark input details$")
+	public void check_with_the_landmark_input_details() throws Throwable {
+		PartialUprootment.check_with_the_landmark_input_details();
+	}
+	@When ("^Click on the Plantation Details action button$")
+	public void Click_on_the_Plantation_Details_action_button() throws Throwable {
+		PartialUprootment.Click_on_the_Plantation_Details_action_button();
+	}
+	@Then ("^check with the Sapling nursery dropdown input selection$")
+	public void check_with_the_Sapling_nursery_dropdown_input_selection() throws Throwable {
+		PartialUprootment.check_with_the_Sapling_nursery_dropdown_input_selection();
+	}
+	@And ("^check with the Sprouts vendor input details$")
+	public void check_with_the_Sprouts_vendor_input_details() throws Throwable {
+		PartialUprootment.check_with_the_Sprouts_vendor_input_details();
+	}
+	@Then ("^check with the Origin of saplings input selection details$")
+	public void check_with_the_Origin_of_saplings_input_selection_details() throws Throwable {
+		PartialUprootment.check_with_the_Origin_of_saplings_input_selection_details();
+	}
+	@And ("^check with the Cross dropdown input selection details$")
+	public void check_with_the_Cross_dropdown_input_selection_details() throws Throwable {
+		PartialUprootment.check_with_the_Cross_dropdown_input_selection_details();
+	}
+	@And ("^check with the Lifted saplings Input details$")
+	public void check_with_the_Lifted_saplings_Input_details() throws Throwable {
+		PartialUprootment.check_with_the_Lifted_saplings_Input_details();
+	}
+	@Then ("^check with the Planted saplings input details$")
+	public void check_with_the_Planted_saplings_input_details() throws Throwable {
+		PartialUprootment.check_with_the_Planted_saplings_input_details();
+	}
+	@And ("^click on the Save button$")
+	public void click_on_the_Save_button() throws Throwable {
+		PartialUprootment.click_on_the_Save_button();
 	}
 }

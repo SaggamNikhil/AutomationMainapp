@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.WebDriverException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.ElementClickInterceptedException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.WebDriverException</h5>
+								<h5 class="mb-4">org.openqa.selenium.ElementClickInterceptedException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="4" parent-id="1">
+<tr class="s-fail" test-id="28" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Given the user signin with the Respective role credential details <br/><span class="text-muted text-sm">Navigated to the Partial Uprootment screen</span></td>
-	<td>0h 0m 0s+952msc</td>
+	<td class="_600">And check with the Is Boundary fencing checkbox selection field <br/><span class="text-muted text-sm">Verify with the Cross Dropdown input selection details</span></td>
+	<td>0h 0m 4s+403msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,13 +137,13 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=126.0.6478.62)
+		<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <md-checkbox ng-model="plotDetails.IsBoundryFencing" name="IsBoundryFencing" aria-label="IsBoundryFencing" tabindex="0" type="checkbox" role="checkbox" class="ng-pristine ng-untouched ng-valid ng-empty" aria-checked="false" aria-invalid="false">...</md-checkbox> is not clickable at point (344, 479). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="height: 901px; position: fixed;"></md-backdrop>
+  (Session info: chrome=126.0.6478.63)
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-8AAK3R0', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.62, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50895}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c965171c9116f030292997d6b18f0e32
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Users\3F-NIK~1.S\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db29a9f942733673b49409d2af79c1b6
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -155,10 +155,11 @@ Session ID: c965171c9116f030292997d6b18f0e32
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at pages.PartialUprootment.the_user_signin_with_the_Respective_role_credential_details(PartialUprootment.java:19)
-	at stepdefinition.PartialUprootment_steps.the_user_signin_with_the_Respective_role_credential_details(PartialUprootment_steps.java:13)
-	at ✽.the user signin with the Respective role credential details(file:///D:/sample/3Fmainapp/Oilpalm/feature/PartialUprootment.feature:17)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at pages.PartialUprootment.check_with_the_Is_Boundary_fencing_checkbox_selection_field(PartialUprootment.java:205)
+	at stepdefinition.PartialUprootment_steps.check_with_the_Is_Boundary_fencing_checkbox_selection_field(PartialUprootment_steps.java:62)
+	at ✽.check with the Is Boundary fencing checkbox selection field(file:///D:/sample/3Fmainapp/Oilpalm/feature/PartialUprootment.feature:262)
 </textarea>
 	</td>
 </tr>
@@ -186,7 +187,7 @@ Session ID: c965171c9116f030292997d6b18f0e32
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 21, 2024 06:07:19 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 24, 2024 08:36:25 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

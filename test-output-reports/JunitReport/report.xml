@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="124.361">
-    <testcase classname="feature to test Modules functionality" name="Verify with the Plot details by Crop in Left out area details" time="123.612">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="243.388">
+    <testcase classname="feature to test Modules functionality" name="Verify with the Cross Dropdown input selection details" time="242.629">
         <system-out><![CDATA[Given the user signin with the Respective role credential details...........passed
 Then the page will Navigate to the Dashboard screen of the main pages.......passed
 Then click on the dashboard menu as Activities module name..................passed
@@ -11,6 +11,18 @@ And check with the selected farmer plot details.............................pass
 Then check with the Total plot area input details...........................passed
 And check with the Total Palm area input details............................passed
 Then check with the Crop in Left out area dropdown selection................passed
+And Check with the Survey number input validations details..................passed
+Then check with the CropIncome Dropdown selection...........................passed
+And check with the Is Boundary fencing checkbox selection field.............passed
+And check with the Is plot handled by care taker checkbox selection field...passed
+Then Validate with the Caretaker name input field...........................passed
+And validate with the Caretaker mobile number details.......................passed
+Then check with the landmark input details..................................passed
+When Click on the Plantation Details action button..........................passed
+Then check with the Sapling nursery dropdown input selection................passed
+And check with the Sprouts vendor input details.............................passed
+Then check with the Origin of saplings input selection details..............passed
+And check with the Cross dropdown input selection details...................passed
 ]]></system-out>
     </testcase>
 </testsuite>
