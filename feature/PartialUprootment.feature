@@ -270,6 +270,7 @@ And check with the Sprouts vendor input details
 Then check with the Origin of saplings input selection details 
 And check with the Cross dropdown input selection details
 
+
 @PartialUprootment_Data3
 Scenario: Check with the Lifted Saplings Input field details
 Given the user signin with the Respective role credential details
@@ -324,3 +325,191 @@ And check with the Lifted saplings Input details
 Then check with the Planted saplings input details 
 And click on the Save button
 
+@PartialUprootment_Data6
+Scenario: Verify with the Without inputs in Planatation details 
+Given the user signin with the Respective role credential details
+Then the page will Navigate to the Dashboard screen of the main pages
+Then click on the dashboard menu as Activities module name
+And click on the Partial Uprootment screen
+Then click on the search farmer input field
+And Select farmer from the auto suggestion keywords list
+And check with the selected farmer plot details 
+Then check with the Total plot area input details
+And check with the Total Palm area input details
+Then check with the Crop in Left out area dropdown selection
+And Check with the Survey number input validations details
+Then check with the CropIncome Dropdown selection
+And check with the Is Boundary fencing checkbox selection field 
+And check with the Is plot handled by care taker checkbox selection field
+Then Validate with the Caretaker name input field
+And validate with the Caretaker mobile number details
+Then check with the landmark input details
+When Click on the Plantation Details action button
+Then check without Sapling nursery selection
+And check without Sprouts vendor selection
+And check without origin of saplings selection 
+And check without Cross input selection
+
+@PartialUprootment_data7
+Scenario: Verify with the Reason for missing tree details
+Given the user signin with the Respective role credential details
+Then the page will Navigate to the Dashboard screen of the main pages
+Then click on the dashboard menu as Activities module name
+And click on the Partial Uprootment screen
+Then click on the search farmer input field
+And Select farmer from the auto suggestion keywords list
+And check with the selected farmer plot details 
+Then check with the Total plot area input details
+And check with the Total Palm area input details
+Then check with the Crop in Left out area dropdown selection
+And Check with the Survey number input validations details
+Then check with the CropIncome Dropdown selection
+And check with the Is Boundary fencing checkbox selection field 
+And check with the Is plot handled by care taker checkbox selection field
+Then Validate with the Caretaker name input field
+And validate with the Caretaker mobile number details
+Then check with the landmark input details
+When Click on the Plantation Details action button
+Then check with the Sapling nursery dropdown input selection
+And check with the Sprouts vendor input details
+Then check with the Origin of saplings input selection details 
+And check with the Cross dropdown input selection details
+And check with the Lifted saplings Input details
+Then check with the Planted saplings input details 
+Then check with the Reason for missing tree input details validation
+
+@PartialUprootment_Data8
+Scenario: Verify with the Plot ownership details by Owner
+Given the user signin with the Respective role credential details
+Then the page will Navigate to the Dashboard screen of the main pages
+Then click on the dashboard menu as Activities module name
+And click on the Partial Uprootment screen
+Then click on the search farmer input field
+And Select farmer from the auto suggestion keywords list
+And check with the selected farmer plot details 
+Then check with the Total plot area input details
+And check with the Total Palm area input details
+Then check with the Crop in Left out area dropdown selection
+And Check with the Survey number input validations details
+Then check with the CropIncome Dropdown selection
+And check with the Is Boundary fencing checkbox selection field 
+And check with the Is plot handled by care taker checkbox selection field
+Then Validate with the Caretaker name input field
+And validate with the Caretaker mobile number details
+Then check with the landmark input details
+When Click on the Plantation Details action button
+Then check with the Sapling nursery dropdown input selection
+And check with the Sprouts vendor input details
+Then check with the Origin of saplings input selection details 
+And check with the Cross dropdown input selection details
+And check with the Lifted saplings Input details
+Then check with the Planted saplings input details 
+Then check with the Reason for missing tree input details validation
+Then check with the Ownership type as a Owner
+
+@PartialUprootment_Data9
+Scenario: verify with the Plot ownership change selection details
+Given the user signin with the Respective role credential details
+Then the page will Navigate to the Dashboard screen of the main pages
+Then click on the dashboard menu as Activities module name
+And click on the Partial Uprootment screen
+Then click on the search farmer input field
+And Select farmer from the auto suggestion keywords list
+And check with the selected farmer plot details 
+Then check with the Total plot area input details
+And check with the Total Palm area input details
+Then check with the Crop in Left out area dropdown selection
+And Check with the Survey number input validations details
+Then check with the CropIncome Dropdown selection
+And check with the Is Boundary fencing checkbox selection field 
+And check with the Is plot handled by care taker checkbox selection field
+Then Validate with the Caretaker name input field
+And validate with the Caretaker mobile number details
+Then check with the landmark input details
+When Click on the Plantation Details action button
+Then check with the Sapling nursery dropdown input selection
+And check with the Sprouts vendor input details
+Then check with the Origin of saplings input selection details 
+And check with the Cross dropdown input selection details
+And check with the Lifted saplings Input details
+Then check with the Planted saplings input details 
+Then check with the Reason for missing tree input details validation
+Then check with the Plot ownership details change as lease
+
+@PartialUprootment_Data10
+Scenario: check with the Landlord details input validation
+Given the user signin with the Respective role credential details
+Then the page will Navigate to the Dashboard screen of the main pages
+Then click on the dashboard menu as Activities module name
+And click on the Partial Uprootment screen
+Then click on the search farmer input field
+And Select farmer from the auto suggestion keywords list
+And check with the selected farmer plot details 
+Then check with the Total plot area input details
+And check with the Total Palm area input details
+Then check with the Crop in Left out area dropdown selection
+And Check with the Survey number input validations details
+Then check with the CropIncome Dropdown selection
+And check with the Is Boundary fencing checkbox selection field 
+And check with the Is plot handled by care taker checkbox selection field
+Then Validate with the Caretaker name input field
+And validate with the Caretaker mobile number details
+Then check with the landmark input details
+When Click on the Plantation Details action button
+Then check with the Sapling nursery dropdown input selection
+And check with the Sprouts vendor input details
+Then check with the Origin of saplings input selection details 
+And check with the Cross dropdown input selection details
+And check with the Lifted saplings Input details
+Then check with the Planted saplings input details 
+Then check with the Reason for missing tree input details validation
+Then check with the Plot ownership details change as lease
+And check with the Landlord name input details validation
+And check with the landlord mobile number input details validation
+And check with the Lease Start date end date input selection validation
+Then check with ID Proof type selection details
+Then check with the Id proof number input details validation
+Then check with the Account Number input details validation
+And check with the account name input details validation
+And check with the Ifsc code input details validation
+
+@PartialUprootment_Data11
+Scenario: Verify with the Reason for Uprootment details 
+Given the user signin with the Respective role credential details
+Then the page will Navigate to the Dashboard screen of the main pages
+Then click on the dashboard menu as Activities module name
+And click on the Partial Uprootment screen
+Then click on the search farmer input field
+And Select farmer from the auto suggestion keywords list
+And check with the selected farmer plot details 
+Then check with the Total plot area input details
+And check with the Total Palm area input details
+Then check with the Crop in Left out area dropdown selection
+And Check with the Survey number input validations details
+Then check with the CropIncome Dropdown selection
+And check with the Is Boundary fencing checkbox selection field 
+And check with the Is plot handled by care taker checkbox selection field
+Then Validate with the Caretaker name input field
+And validate with the Caretaker mobile number details
+Then check with the landmark input details
+When Click on the Plantation Details action button
+Then check with the Sapling nursery dropdown input selection
+And check with the Sprouts vendor input details
+Then check with the Origin of saplings input selection details 
+And check with the Cross dropdown input selection details
+And check with the Lifted saplings Input details
+Then check with the Planted saplings input details 
+Then check with the Reason for missing tree input details validation
+And click on the Save button
+Then check with the Plot ownership details change as lease
+And check with the Landlord name input details validation
+And check with the landlord mobile number input details validation
+And check with the Lease Start date end date input selection validation
+Then check with ID Proof type selection details
+Then check with the Id proof number input details validation
+Then check with the Account Number input details validation
+And check with the account name input details validation
+And check with the Ifsc code input details validation
+Then check with the Uprootment reason input selection details
+And check with the Plans to Plan in future input selection details 
+And click on the final save button

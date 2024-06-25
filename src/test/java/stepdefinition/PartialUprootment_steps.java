@@ -109,4 +109,76 @@ public class PartialUprootment_steps {
 	public void click_on_the_Save_button() throws Throwable {
 		PartialUprootment.click_on_the_Save_button();
 	}
+	@Then ("^check without Sapling nursery selection$")
+	public void check_without_Sapling_nursery_selection() throws Throwable {
+		PartialUprootment.check_without_Sapling_nursery_selection();
+	}
+	@And ("^check without Sprouts vendor selection$")
+	public void check_without_Sprouts_vendor_selection() throws Throwable {
+		PartialUprootment.check_without_Sprouts_vendor_selection();
+	}
+	@And ("^check without origin of saplings selection$")
+	public void check_without_origin_of_saplings_selection() throws Throwable {
+		PartialUprootment.check_without_origin_of_saplings_selection();
+	}
+	@And ("^check without Cross input selection$")
+	public void check_without_Cross_input_selection() throws Throwable {
+		PartialUprootment.check_without_Cross_input_selection();
+	}
+	@Then ("^check with the Reason for missing tree input details validation$")
+	public void check_with_the_Reason_for_missing_tree_input_details_validation() throws Throwable {
+		PartialUprootment.check_with_the_Reason_for_missing_tree_input_details_validation();
+	}
+	@Then ("^check with the Ownership type as a Owner$")
+	public void check_with_the_Ownership_type_as_a_Owner() throws Throwable {
+		PartialUprootment.check_with_the_Ownership_type_as_a_Owner();
+	}
+	@Then ("^check with the Plot ownership details change as lease$")
+	public void check_with_the_Plot_ownership_details_change_as_lease() throws Throwable {
+		PartialUprootment.check_with_the_Plot_ownership_details_change_as_lease();
+	}
+	@And ("^check with the Landlord name input details validation$")
+	public void check_with_the_Landlord_name_input_details_validation() throws Throwable {
+		PartialUprootment.check_with_the_Landlord_name_input_details_validation();
+	}
+	@And ("^check with the landlord mobile number input details validation$")
+	public void check_with_the_landlord_mobile_number_input_details_validation() throws Throwable {
+		PartialUprootment.check_with_the_landlord_mobile_number_input_details_validation();
+	}
+	@And ("^check with the Lease Start date end date input selection validation$")
+	public void check_with_the_Lease_Start_date_end_date_input_selection_validation() throws Throwable {
+		PartialUprootment.check_with_the_Lease_Start_date_end_date_input_selection_validation();
+	}
+	@Then ("^check with ID Proof type selection details$")
+	public void check_with_ID_Proof_type_selection_details() throws Throwable {
+		PartialUprootment.check_with_ID_Proof_type_selection_details();
+	}
+	@Then ("^check with the Id proof number input details validation$")
+	public void check_with_the_Id_proof_number_input_details_validation() throws Throwable {
+		PartialUprootment.check_with_the_Id_proof_number_input_details_validation();
+	}
+	@Then ("^check with the Account Number input details validation$")
+	public void check_with_the_Account_Number_input_details_validation() throws Throwable {
+		PartialUprootment.check_with_the_Account_Number_input_details_validation();
+	}
+	@And ("^check with the account name input details validation$")
+	public void check_with_the_account_name_input_details_validation() throws Throwable {
+		PartialUprootment.check_with_the_account_name_input_details_validation();
+	}
+	@And ("^check with the Ifsc code input details validation$")
+	public void check_with_the_Ifsc_code_input_details_validation() throws Throwable {
+		PartialUprootment.check_with_the_Ifsc_code_input_details_validation();
+	}
+	@Then ("^check with the Uprootment reason input selection details$")
+	public void check_with_the_Uprootment_reason_input_selection_details() throws Throwable {
+		PartialUprootment.check_with_the_Uprootment_reason_input_selection_details();
+	}
+	@And ("^check with the Plans to Plan in future input selection details$")
+	public void check_with_the_Plans_to_Plan_in_future_input_selection_details() throws Throwable {
+		PartialUprootment.check_with_the_Plans_to_Plan_in_future_input_selection_details();
+	}
+	@And ("^click on the final save button$")
+	public void click_on_the_final_save_button() throws Throwable {
+		PartialUprootment.click_on_the_final_save_button();
+	}
 }
