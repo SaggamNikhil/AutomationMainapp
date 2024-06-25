@@ -268,7 +268,7 @@ When Click on the Plantation Details action button
 Then check with the Sapling nursery dropdown input selection
 And check with the Sprouts vendor input details
 Then check with the Origin of saplings input selection details 
-#And check with the Cross dropdown input selection details
+And check with the Cross dropdown input selection details
 
 @PartialUprootment_Data3
 Scenario: Check with the Lifted Saplings Input field details
