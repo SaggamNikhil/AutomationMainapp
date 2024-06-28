@@ -1,44 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="475.733">
-    <testcase classname="feature to test Modules functionality" name="Verify with the Reason for Uprootment details" time="475.05">
-        <system-out><![CDATA[Given the user signin with the Respective role credential details...........passed
-Then the page will Navigate to the Dashboard screen of the main pages.......passed
-Then click on the dashboard menu as Activities module name..................passed
-And click on the Partial Uprootment screen..................................passed
-Then click on the search farmer input field.................................passed
-And Select farmer from the auto suggestion keywords list....................passed
-And check with the selected farmer plot details.............................passed
-Then check with the Total plot area input details...........................passed
-And check with the Total Palm area input details............................passed
-Then check with the Crop in Left out area dropdown selection................passed
-And Check with the Survey number input validations details..................passed
-Then check with the CropIncome Dropdown selection...........................passed
-And check with the Is Boundary fencing checkbox selection field.............passed
-And check with the Is plot handled by care taker checkbox selection field...passed
-Then Validate with the Caretaker name input field...........................passed
-And validate with the Caretaker mobile number details.......................passed
-Then check with the landmark input details..................................passed
-When Click on the Plantation Details action button..........................passed
-Then check with the Sapling nursery dropdown input selection................passed
-And check with the Sprouts vendor input details.............................passed
-Then check with the Origin of saplings input selection details..............passed
-And check with the Cross dropdown input selection details...................passed
-And check with the Lifted saplings Input details............................passed
-Then check with the Planted saplings input details..........................passed
-Then check with the Reason for missing tree input details validation........passed
-And click on the Save button................................................passed
-Then check with the Plot ownership details change as lease..................passed
-And check with the Landlord name input details validation...................passed
-And check with the landlord mobile number input details validation..........passed
-And check with the Lease Start date end date input selection validation.....passed
-Then check with ID Proof type selection details.............................passed
-Then check with the Id proof number input details validation................passed
-Then check with the Account Number input details validation.................passed
-And check with the account name input details validation....................passed
-And check with the Ifsc code input details validation.......................passed
-Then check with the Uprootment reason input selection details...............passed
-And check with the Plans to Plan in future input selection details..........passed
-And click on the final save button..........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="281.998">
+    <testcase classname="feature to test Modules functionality" name="Verify with the Plan for uprooting current Plantation details" time="281.165">
+        <system-out><![CDATA[Given the user has entered a"Admin".........................................passed
+And the user has entered1 a"P@ssw0rd".......................................passed
+And User click on the LogIn button..........................................passed
+Then the User navigated to the home page....................................passed
+Then click on the dashoboard menu as Activities.............................passed
+And click on the Underplanting menu screen..................................passed
+Then check with the From date selection validations details.................passed
+Then check with the Click on the search button from the Underplanting screen.passed
+And check with the Click on the Initiate Underplanting action button........passed
+Then Check with the Select Farmer search input details......................passed
+And check with the Select plot from the underplanting screen................passed
+Then check with the plot details by Total Plot area ip details..............passed
+And check with the Plot details by Total Plam area ip details...............passed
+Then check with the Expected month of Underplanting tress Date selection....passed
+And check with the Address one input details................................passed
+Then check with the Landmark field input details............................passed
+And check with the file upload application for underplanting................passed
+Then check with the Underplanting reason dropdown selection.................passed
+And check with the Approx height of current tress details...................passed
+And check with the Harvesting method dropdown selection details.............passed
+And check with the Plan for uprooting current plantation details............passed
+And Check with the Clicking on the Save butoon details......................passed
 ]]></system-out>
     </testcase>
 </testsuite>

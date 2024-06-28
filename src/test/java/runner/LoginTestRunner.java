@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="stepdefinition",
 				  features = "feature",
 				  monochrome = true, 
-                  tags = "@PartialUprootment_Data11")
+                  tags = "@UnderPlanting_Data22")
 public class LoginTestRunner {
 
 

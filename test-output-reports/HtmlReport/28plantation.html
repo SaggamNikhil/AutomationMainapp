@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jun 21, 2024 04:15:26 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jun 28, 2024 12:14:14 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -81,7 +81,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@OilPalm_Requirement</a></li>
-					<li><a href='#'>@Recoveryfarmer_data_valid12</a></li>
+					<li><a href='#'>@SetPlantation_category_Data9</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -152,7 +152,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>18</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>22</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -178,7 +178,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>feature to test Modules functionality</span>
-						<span class='test-time'>Jun 21, 2024 04:15:35 pm</span>
+						<span class='test-time'>Jun 28, 2024 12:14:23 pm</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -188,114 +188,141 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label'>@OilPalm_Requirement</span>
-		<span class='category label'>@Recoveryfarmer_data_valid12</span>
+		<span class='category label'>@SetPlantation_category_Data9</span>
 	</div>
-	<span class='duration right label'>0h 2m 24s+56ms</span>
+	<span class='duration right label'>0h 1m 46s+385ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Check with the Add Duplicate recovery farmer in list</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Check with the View Category Comments input details</div>
+		<table class='runtime-table table-striped table'><tr><td>username</td><td>password</td></tr><tr><td>Admin</td><td>P@ssw0rd</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.the_user_signin_with_the_Respective_role_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user signin with the Respective role details</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='5' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded1.png"><i class='material-icons'>panorama</i></a></li>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Check with the View Category Comments input details</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.the_user_has_entered(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given the user has entered"Admin"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='6' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded1.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='7' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.the_user_has_entered1(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the user has entered1"P@ssw0rd"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='8' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded2.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='9' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.User_click_on_the_signIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the signIn</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='10' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded3.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='11' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.User_navigated_to_the_home_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User navigated to the home page</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='12' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded4.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='13' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.Click_on_the_Activities_module_main_menu()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on the Activities module main menu</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='14' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='15' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.click_on_the_Setplantation_category_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on the Setplantation category screen</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='16' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='17' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.check_with_the_Select_financial_year_wise_data()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with the Select financial year wise data</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='18' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded7.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='19' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.click_on_the_Add_plantation_category_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When click on the Add plantation category button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='20' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded8.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='21' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.check_with_the_Comments_Input_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with the Comments Input details</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='22' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded9.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='23' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.check_with_the_Save_input_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And check with the Save input details</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='24' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded10.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='25' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefinition.SetPlantationCategory_Steps.check_with_the_View_Plantation_category_Comments_input_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with the View Plantation category Comments input details</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='26' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded11.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
 			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='6' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.the_page_will_Navigate_to_the_Dashboard_screen_of_the_main_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the page will Navigate to the Dashboard screen of the main page</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='7' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded2.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='8' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.click_on_the_menu_as_a_Activities_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on the menu as a Activities module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='9' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded3.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.click_on_the_Recovery_farmer_details_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on the Recovery farmer details screen</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='11' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded4.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='12' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_the_From_date_selection_from_the_Recovery_farmer_details_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And check with the From date selection from the Recovery farmer details screen</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='13' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='14' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_active_grid_Edit_button_click()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with active grid Edit button click</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='15' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='16' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_the_Add_button_with_update_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And check with the Add button with update details</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='17' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded7.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='18' class='node then pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.check_with_same_recover_farmer_into_another_index()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then check with same recover farmer into another index</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='19' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded8.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='20' class='node and pass' status='pass'>
-			<div class="step-name" title="stepdefinition.Recoveryfarmerdetails_steps.click_on_the_update_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on the update button</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='21' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>stepdefinition.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded9.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -363,13 +390,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 21, 2024 04:15:35 pm</td>
+										<td>Jun 28, 2024 12:14:23 pm</td>
 										<td class='linked' test-id='1'>feature to test Modules functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 21, 2024 04:15:35 pm</td>
-										<td class='linked' test-id='2'>Check with the Add Duplicate recovery farmer in list</td>
+										<td>Jun 28, 2024 12:14:23 pm</td>
+										<td class='linked' test-id='3'>Check with the View Category Comments input details</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -379,14 +406,14 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Recoveryfarmer_data_valid12</span>
+						<span class='category-name'>@SetPlantation_category_Data9</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -401,8 +428,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 21, 2024 04:15:35 pm</td>
-										<td class='linked' test-id='2'>Check with the Add Duplicate recovery farmer in list</td>
+										<td>Jun 28, 2024 12:14:23 pm</td>
+										<td class='linked' test-id='2'>Check with the View Category Comments input details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 28, 2024 12:14:23 pm</td>
+										<td class='linked' test-id='3'>Check with the View Category Comments input details</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -439,25 +471,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>22</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 21, 2024 04:15:26 pm</div>
+					<div class='panel-lead'>Jun 28, 2024 12:14:14 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 21, 2024 04:18:01 pm</div>
+			 		<div class='panel-lead'>Jun 28, 2024 12:16:11 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 35s+0ms</div>
+					<div class='panel-lead'>0h 1m 56s+680ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -482,8 +514,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Recoveryfarmer_data_valid12</td>
-							<td>1</td>
+							<td>@SetPlantation_category_Data9</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -519,8 +551,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 18,
-				passGrandChild: 18,
+				grandChildCount: 22,
+				passGrandChild: 22,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -533,7 +565,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "feature to test Modules functionality":144.056
+			        "feature to test Modules functionality":106.385
 			};
 		</script>
 	
