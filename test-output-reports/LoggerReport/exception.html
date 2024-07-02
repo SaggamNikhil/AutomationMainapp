@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.InvalidSelectorException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.ElementClickInterceptedException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.InvalidSelectorException</h5>
+								<h5 class="mb-4">org.openqa.selenium.ElementClickInterceptedException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="27" parent-id="1">
+<tr class="s-fail" test-id="47" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then check with the plot details by Total Plot area ip details <br/><span class="text-muted text-sm">Verify with the Select plot from the underplanting screen</span></td>
-	<td>0h 0m 13s+222msc</td>
+	<td class="_600">And check with the No of imp saplings Amount Received for <br/><span class="text-muted text-sm">check with the Add gap Filling Advance details</span></td>
+	<td>0h 0m 4s+458msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,16 +137,13 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression (//div[@ng-messages='plotForm.TotalPlotArea.$error'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@ng-messages='plotForm.TotalPlotArea.$error']' is not a valid XPath expression."}
+		<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="text" ng-model="Request.NoOfImportedSaplingsAmountReceivedFor" numbers-only="" name="NoOfImportedSaplingsAmountReceivedFor" ng-change="saplingsAdvancePaidFor()" required="" class="ng-pristine ng-untouched ng-valid md-input ng-not-empty ng-valid-required" id="input_142" aria-invalid="false" style=""> is not clickable at point (595, 414). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="height: 901px; position: fixed;"></md-backdrop>
   (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Users\3F-NIK~1.S\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8d34f96c06649e3b6d10f8a662252a2a
-*** Element info: {Using=xpath, value=(//div[@ng-messages='plotForm.TotalPlotArea.$error']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Users\3F-NIK~1.S\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 40ebc98af5ef0243c96e530ef87b4aeb
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -158,13 +155,11 @@ Session ID: 8d34f96c06649e3b6d10f8a662252a2a
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at pages.UnderPlanting.check_with_the_plot_details_by_Total_Plot_area_ip_details(UnderPlanting.java:258)
-	at stepdefinition.UnderPlanting_Steps.check_with_the_plot_details_by_Total_Plot_area_ip_details(UnderPlanting_Steps.java:78)
-	at ✽.check with the plot details by Total Plot area ip details(file:///D:/sample/3Fmainapp/Oilpalm/feature/UnderPlanting.feature:223)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at pages.GapFilling.check_with_the_No_of_imp_saplings_Amount_Received_for(GapFilling.java:276)
+	at stepdefinition.GapFilling_Steps.check_with_the_No_of_imp_saplings_Amount_Received_for(GapFilling_Steps.java:98)
+	at ✽.check with the No of imp saplings Amount Received for(file:///D:/sample/3Fmainapp/Oilpalm/feature/GapFilling.feature:344)
 </textarea>
 	</td>
 </tr>
@@ -192,7 +187,7 @@ Session ID: 8d34f96c06649e3b6d10f8a662252a2a
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 28, 2024 04:56:40 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jul 2, 2024 07:07:55 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
