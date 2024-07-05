@@ -113,6 +113,10 @@ public class GapFilling_Steps {
     public void check_with_the_Add_gap_filling_Nursery_details() throws Throwable {
     	GapFilling.check_with_the_Add_gap_filling_Nursery_details();
     }
+    @Then ("^check with the Add gap filling indi Nursery details$")
+    public void check_with_the_Add_gap_filling_indi_Nursery_details() throws Throwable {
+    	GapFilling.check_with_the_Add_gap_filling_indi_Nursery_details();
+    }
     @And ("^check with the Advance receipt number selection details$")
     public void check_with_the_Advance_receipt_number_selection_details() throws Throwable {
     	GapFilling.check_with_the_Advance_receipt_number_selection_details();
@@ -132,5 +136,13 @@ public class GapFilling_Steps {
     @And ("^check with the Save imp details$")
     public void check_with_the_Save_imp_details() throws Throwable {
     	GapFilling.check_with_the_Save_imp_details();
+    }
+    @And ("^check with the Indigenous saplings Issues Ip$")
+    public void check_with_the_Indigenous_saplings_Issues_Ip() throws Throwable {
+    	GapFilling.check_with_the_Indigenous_saplings_Issues_Ip();
+    }
+    @And ("^check with the Save Indi details$")
+    public void check_with_the_Save_Indi_details() throws Throwable {
+    	GapFilling.check_with_the_Save_Indi_details();
     }
 }

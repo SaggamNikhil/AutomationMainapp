@@ -5,6 +5,7 @@ import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -51,15 +52,18 @@ public class GapFilling extends DriverFactory{
   	By Add_print_btn_click     = By.xpath("//button[@ng-click='updateAdvanceDetails(Request, advanceForm,1)']");
   	By Adv_State_head_app      = By.xpath("(//button[@aria-label='Advance State Head Approve'])[1]");
   	By Final_app_state         = By.xpath("//button[@ng-click='approveOrDecline()']");
-  	By Nursery_saplings_ip     = By.xpath("(//button[@ng-click='addNurSaplings(row)'])[1]");
+  	By Nursery_saplings_ip     = By.xpath("(//button[@aria-label='Add Gap Filling Nursery Saplings'])[1]");
   	By Nursery_opt             = By.xpath("//md-select[@ng-model='nursery']");
   	By Batch_sel               = By.xpath("//md-select[@ng-model='Batch']");
   	By Advance_receipt_sel     = By.xpath("//md-select[@ng-model='AdvanceDetails']");
   	By Variety_sel             = By.xpath("//md-select[@ng-model='nurseryCross']");
   	By Vendor_sel              = By.xpath("//md-select[@ng-model='nurseryVendor']");
   	By No_of_imp_enter         = By.xpath("(//input[@name='NoOfImportedSaplingsIssued'])[2]");
-    By Save_details            = By.xpath("//button[@ng-click='addnurserySaplings($event)']");
-  
+  	By comments                = By.xpath("//input[@name='Comments']");
+    By Save_details            = By.xpath("(//button[@class='btn btn-sm btn-theme'])[5]");
+    By Print_confirmation      = By.xpath("//span[text()='Cancel']");
+    By No_of_Indi_enter        = By.xpath("(//input[@name='NoOfIndigenousSaplingsIssued'])[2]");
+    By Save_indi_details       = By.xpath("//button[@ng-click='addnurserySaplings($event)']");
   	
   			
   			
@@ -156,7 +160,7 @@ public class GapFilling extends DriverFactory{
 	public void check_with_the_Auto_search_farmer_using_keywords_details() throws Throwable {
 		utilities.webDriverWait(driver, Search_farmer_click);
         WebElement searchField = driver.findElement(Search_farmer_click);
-        searchField.sendKeys("177");
+        searchField.sendKeys("832");
         utilities.MaximumWait(driver);
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
@@ -165,7 +169,7 @@ public class GapFilling extends DriverFactory{
             System.out.println("Number of suggestions found: " + suggestions.size());
             for (WebElement suggestion : suggestions) {
                 System.out.println("Suggestion text: " + suggestion.getText());
-                if (suggestion.getText().contains("177")) {
+                if (suggestion.getText().contains("832")) {
                     suggestion.click();
                     break;
                 }
@@ -191,7 +195,7 @@ public class GapFilling extends DriverFactory{
 		utilities.MaximumWait(driver);
 		driver.findElement(imported_saplings_ip).clear();
 		utilities.MaximumWait(driver);
-		driver.findElement(imported_saplings_ip).sendKeys("3");
+		driver.findElement(imported_saplings_ip).sendKeys("5");
 		utilities.MaximumWait(driver);
 
 
@@ -203,7 +207,7 @@ public class GapFilling extends DriverFactory{
 		utilities.MaximumWait(driver);
 		driver.findElement(Indigenous_sap_ip).clear();
 		utilities.MaximumWait(driver);
-		driver.findElement(Indigenous_sap_ip).sendKeys("3");
+		driver.findElement(Indigenous_sap_ip).sendKeys("5");
 		utilities.MaximumWait(driver);
 	}
 
@@ -261,7 +265,7 @@ public class GapFilling extends DriverFactory{
 		utilities.webDriverWait(driver, State_head_click);
 		driver.findElement(State_head_click).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(State_head_cmt).sendKeys("Cluster manager approval by admin ");
+		driver.findElement(State_head_cmt).sendKeys("State manager approval by admin ");
 		utilities.MinimumWait(driver);
 		driver.findElement(State_mang_app).click();
 		utilities.MinimumWait(driver);
@@ -282,8 +286,6 @@ public class GapFilling extends DriverFactory{
 		driver.findElement(mode_of_payment).click();
 		utilities.MinimumWait(driver);
 		Robot s = new Robot();
-		s.keyPress(KeyEvent.VK_DOWN);
-		utilities.MaximumWait(driver);
 		s.keyPress(KeyEvent.VK_ENTER);
 		utilities.MaximumWait(driver);
 
@@ -293,7 +295,7 @@ public class GapFilling extends DriverFactory{
 		utilities.webDriverWait(driver, No_imp_saplings_ip);
 		driver.findElement(No_imp_saplings_ip).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(No_imp_saplings_ip).sendKeys("5");
+		driver.findElement(No_imp_saplings_ip).sendKeys("3");
 		utilities.MaximumWait(driver);
 
 	}
@@ -302,7 +304,7 @@ public class GapFilling extends DriverFactory{
 		utilities.webDriverWait(driver, No_Indi_Saplings_ip);
 		driver.findElement(No_Indi_Saplings_ip).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(No_Indi_Saplings_ip).sendKeys("5");
+		driver.findElement(No_Indi_Saplings_ip).sendKeys("3");
 		utilities.MaximumWait(driver);
 	}
 
@@ -313,13 +315,27 @@ public class GapFilling extends DriverFactory{
 	}
 
 	public void click_on_the_Advance_state_head_approval() throws Throwable {
-		utilities.webDriverWait(driver, Adv_State_head_app);
-		driver.findElement(Adv_State_head_app).click();
-		utilities.MinimumWait(driver);
-		driver.findElement(Final_app_state).click();
-		utilities.MaximumWait(driver);
+//		utilities.webDriverWait(driver, Adv_State_head_app);
+//		driver.findElement(Adv_State_head_app).click();
+//		utilities.MinimumWait(driver);
+//		driver.findElement(Final_app_state).click();
+//		utilities.MaximumWait(driver);
+		 WebDriverWait wait = new WebDriverWait(driver, 10);
 
-	}
+		    // Click the first button using JavaScript after ensuring it's clickable
+		    WebElement advStateHeadAppButton = wait.until(ExpectedConditions.elementToBeClickable(Adv_State_head_app));
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", advStateHeadAppButton);
+		    
+		    // Minimum wait
+		    utilities.MinimumWait(driver);
+
+		    // Click the final approval button using JavaScript after ensuring it's clickable
+		    WebElement finalAppStateButton = wait.until(ExpectedConditions.elementToBeClickable(Final_app_state));
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", finalAppStateButton);
+		    
+		    // Maximum wait
+		    utilities.MaximumWait(driver);
+		}
 
 	public void check_with_the_Add_gap_filling_Nursery_details() throws Throwable {
 		utilities.webDriverWait(driver, Nursery_saplings_ip);
@@ -328,8 +344,6 @@ public class GapFilling extends DriverFactory{
 		driver.findElement(Nursery_opt).click();
 		utilities.MaximumWait(driver);
 		Robot s = new Robot();
-		s.keyPress(KeyEvent.VK_DOWN);
-		utilities.MaximumWait(driver);
 		s.keyPress(KeyEvent.VK_ENTER);
 		utilities.MaximumWait(driver);
 		driver.findElement(Batch_sel).click();
@@ -339,8 +353,22 @@ public class GapFilling extends DriverFactory{
 		utilities.MaximumWait(driver);
 		t.keyPress(KeyEvent.VK_ENTER);
 		utilities.MaximumWait(driver);
-
 	}
+//		driver.findElement(Print_confirmation).click();
+//		utilities.MaximumWait(driver);
+//		try {
+//            cancelPrintDialog();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+//    public static void cancelPrintDialog() throws Exception {
+//        Robot robot = new Robot();
+//        robot.delay(2000); // Wait for 2 seconds to allow the print dialog to appear
+//        robot.keyPress(KeyEvent.VK_ESCAPE); // Press the ESC key to cancel the print dialog
+//        robot.keyRelease(KeyEvent.VK_ESCAPE); // Release the ESC key
+//    }
+	
 
 	public void check_with_the_Advance_receipt_number_selection_details() throws Throwable {
 		utilities.webDriverWait(driver, Advance_receipt_sel);
@@ -379,7 +407,9 @@ public class GapFilling extends DriverFactory{
 		utilities.webDriverWait(driver, No_of_imp_enter);
 		driver.findElement(No_of_imp_enter).click();
 		utilities.MaximumWait(driver);
-		driver.findElement(No_of_imp_enter).sendKeys("5");
+		driver.findElement(No_of_imp_enter).sendKeys("3");
+		utilities.MaximumWait(driver);
+		driver.findElement(comments).sendKeys("imported details added");
 		utilities.MaximumWait(driver);
 
 	}
@@ -389,5 +419,51 @@ public class GapFilling extends DriverFactory{
 		driver.findElement(Save_details).click();
 		utilities.MaximumWait(driver);
 	}
+	public void check_with_the_Add_gap_filling_indi_Nursery_details() throws Throwable {
+		utilities.webDriverWait(driver, Nursery_saplings_ip);
+		driver.findElement(Nursery_saplings_ip).click();
+		utilities.MaximumWait(driver);
+		driver.findElement(Nursery_opt).click();
+		utilities.MaximumWait(driver);
+		Robot s = new Robot();
+		s.keyPress(KeyEvent.VK_DOWN);
+		utilities.MaximumWait(driver);
+		s.keyPress(KeyEvent.VK_ENTER);
+		utilities.MaximumWait(driver);
+		driver.findElement(Batch_sel).click();
+		utilities.MaximumWait(driver);
+		Robot t = new Robot();
+		t.keyPress(KeyEvent.VK_DOWN);
+		utilities.MaximumWait(driver);
+		t.keyPress(KeyEvent.VK_DOWN);
+		utilities.MaximumWait(driver);
+		t.keyPress(KeyEvent.VK_DOWN);
+		utilities.MaximumWait(driver);
+		t.keyPress(KeyEvent.VK_DOWN);
+		utilities.MaximumWait(driver);
+		t.keyPress(KeyEvent.VK_DOWN);
+		utilities.MaximumWait(driver);
+		t.keyPress(KeyEvent.VK_ENTER);
+		utilities.MaximumWait(driver);
+		
+	}
+	public void check_with_the_Indigenous_saplings_Issues_Ip() throws Throwable {
+		utilities.webDriverWait(driver, No_of_Indi_enter);
+		driver.findElement(No_of_Indi_enter).click();
+		utilities.MaximumWait(driver);
+		driver.findElement(No_of_Indi_enter).sendKeys("3");
+		utilities.MaximumWait(driver);
+		
+	}
+
+	public void check_with_the_Save_Indi_details() throws Throwable {
+		utilities.webDriverWait(driver, Save_indi_details);
+		driver.findElement(Save_indi_details).click();
+		Robot s = new Robot();
+		s.keyPress(KeyEvent.VK_TAB);
+		utilities.MaximumWait(driver);
+	}
+
+
 
 }

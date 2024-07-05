@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.ElementClickInterceptedException</a>
+							<a href="#" class="item-title _500">java.lang.AssertionError</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.ElementClickInterceptedException</h5>
+								<h5 class="mb-4">java.lang.AssertionError</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="47" parent-id="1">
+<tr class="s-fail" test-id="18" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">And check with the No of imp saplings Amount Received for <br/><span class="text-muted text-sm">check with the Add gap Filling Advance details</span></td>
-	<td>0h 0m 4s+458msc</td>
+	<td class="_600">And verify with the click on the Search button <br/><span class="text-muted text-sm">Active grid check with the Search button result details</span></td>
+	<td>0h 0m 6s+471msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,29 +137,12 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="text" ng-model="Request.NoOfImportedSaplingsAmountReceivedFor" numbers-only="" name="NoOfImportedSaplingsAmountReceivedFor" ng-change="saplingsAdvancePaidFor()" required="" class="ng-pristine ng-untouched ng-valid md-input ng-not-empty ng-valid-required" id="input_142" aria-invalid="false" style=""> is not clickable at point (595, 414). Other element would receive the click: <md-backdrop class="md-select-backdrop md-click-catcher ng-scope" style="height: 901px; position: fixed;"></md-backdrop>
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-8AAK3R0', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.55 (7616ff175414..., userDataDir: C:\Users\3F-NIK~1.S\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 40ebc98af5ef0243c96e530ef87b4aeb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at pages.GapFilling.check_with_the_No_of_imp_saplings_Amount_Received_for(GapFilling.java:276)
-	at stepdefinition.GapFilling_Steps.check_with_the_No_of_imp_saplings_Amount_Received_for(GapFilling_Steps.java:98)
-	at ✽.check with the No of imp saplings Amount Received for(file:///D:/sample/3Fmainapp/Oilpalm/feature/GapFilling.feature:344)
+		<textarea disabled class="code-block">java.lang.AssertionError: Expected text 'Expected Text' not found in Total Collection Count: Total Collection Count: 70
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.MillCollectionDetails.verify_with_the_click_on_the_Search_button(MillCollectionDetails.java:109)
+	at stepdefinition.MillCollectionDetails_steps.verify_with_the_click_on_the_Search_button(MillCollectionDetails_steps.java:42)
+	at ✽.verify with the click on the Search button(file:///D:/sample/3Fmainapp/Oilpalm/feature/MillCollectionDetails.feature:23)
 </textarea>
 	</td>
 </tr>
@@ -187,7 +170,7 @@ Session ID: 40ebc98af5ef0243c96e530ef87b4aeb
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jul 2, 2024 07:07:55 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jul 5, 2024 06:48:28 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

@@ -14,8 +14,24 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="stepdefinition",
 				  features = "feature",
 				  monochrome = true, 
-                  tags = "@Gap_Filling_Data17")
+                  tags = "@Data_vali5")
 public class LoginTestRunner {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

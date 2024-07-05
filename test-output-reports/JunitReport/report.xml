@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="338.675">
-    <testcase classname="feature to test Modules functionality" name="check with the Add gap filing Nursery details" time="337.893">
-        <system-out><![CDATA[Given the user has entered text an"admin"...................................passed
-And the user has entered1 text an"P@ssw0rd".................................passed
-And User In the page click on the LogIn button input........................passed
-Then the User navigated to the dashboard of home page details...............passed
-And check with the click on the Activities Menu screen......................passed
-Then check with the Click on the Gapfilling menu screen.....................passed
-Then check with the From Date selection input details.......................passed
-When click on the search button.............................................passed
-And check with the navigated to the Initiate gap filling screen.............passed
-Then check with the Search farmer from the Initiate gap filling screen......passed
-And check with the Auto search farmer using keywords details................passed
-And check with the Imported Saplings To be Issued input field details.......passed
-And check with the Indigenous Saplings To be Issued input field details.....passed
-Then check with the Exp Date of Pickup input details validations............passed
-And check with the Gap filling Reason Details update........................passed
-Then check with the Upload file input details...............................passed
-And check with the Save details from the Initiate gap filling...............passed
-Then check with the Gap filling screen by Cluster manager Approvals.........passed
-And check with the Gap filling screen by State head manager Approvals.......passed
-Then check with the Add gap filling advance details.........................passed
-And check with the Mode of Payement selection details.......................passed
-And check with the No of imp saplings Amount Received for...................passed
-And check with the No of Indi saplings Amount received for..................passed
-Then check with the Add Print button click..................................passed
-When click on the Advance state head approval...............................passed
-Then check with the Add gap filling Nursery details.........................passed
-And check with the Advance receipt number selection details.................passed
-And check with the Variety option selection details.........................passed
-And check with the vendor option selection details..........................passed
-And check with the Imported saplings Issues Ip..............................passed
-And check with the Save imp details.........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="133.429">
+    <testcase classname="Test Modules functionality" name="Active grid check with the Merge action button details" time="132.53">
+        <system-out><![CDATA[Given User is on login page navgations......................................passed
+When The User enters with the username and passwords details................passed
+And Clicks on the logins button from login details page.....................passed
+Then the page will be Navigate to the Dashboards home menu..................passed
+And Dashboard menu click on the Consignment Merge screen....................passed
+Then check with the Active grid Status type Dropdown selection field........passed
+And check with the Active grid Select collection center dropdown field......passed
+Then verify with the From date input selection details......................passed
+And check with the Vehicle number input details validation..................passed
+When click on the search details button.....................................passed
+Then check with the Checkbox selection from the Active grid.................passed
+When Click on the Merge action button.......................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
