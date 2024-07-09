@@ -1,18 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="133.429">
-    <testcase classname="Test Modules functionality" name="Active grid check with the Merge action button details" time="132.53">
-        <system-out><![CDATA[Given User is on login page navgations......................................passed
-When The User enters with the username and passwords details................passed
-And Clicks on the logins button from login details page.....................passed
-Then the page will be Navigate to the Dashboards home menu..................passed
-And Dashboard menu click on the Consignment Merge screen....................passed
-Then check with the Active grid Status type Dropdown selection field........passed
-And check with the Active grid Select collection center dropdown field......passed
-Then verify with the From date input selection details......................passed
-And check with the Vehicle number input details validation..................passed
-When click on the search details button.....................................passed
-Then check with the Checkbox selection from the Active grid.................passed
-When Click on the Merge action button.......................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="1,321.009">
+    <testcase classname="Test Modules functionality" name="Navigated to the Role screens From the Dashboard menu" time="58.787">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Add New role actions from the Role screen" time="63.7">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Add new role form details" time="82.117">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Select Reported role from the Add New role pop-up screen" time="90.75">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Code input details from the Add New role pop-up screen" time="110.163">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+And check with the code input details.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Check with the Description input details from the Add new role popup screen" time="124.155">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+And check with the code input details.......................................passed
+Then check with the Description input details...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="check with the Select Activity righs from the Add new role popup screen" time="138.246">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+And check with the code input details.......................................passed
+Then check with the Description input details...............................passed
+And check with the Select activity right from the dropdown field............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="check with the Save details from the Add new role popup screen" time="143.111">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+And check with the code input details.......................................passed
+Then check with the Description input details...............................passed
+And check with the Select activity right from the dropdown field............passed
+And check with the Clicking on the save action button.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="check with the View role hierarchy details from the Add new role popup screen" time="156.44">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+And check with the code input details.......................................passed
+Then check with the Description input details...............................passed
+And check with the Select activity right from the dropdown field............passed
+And check with the Clicking on the save action button.......................passed
+Then check with the View role Hierarchy details.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="check with the Filters from the Add new role popup screen" time="169.089">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+And check with the code input details.......................................passed
+Then check with the Description input details...............................passed
+And check with the Select activity right from the dropdown field............passed
+And check with the Clicking on the save action button.......................passed
+Then check with the View role Hierarchy details.............................passed
+And check with the Enable filter button.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="check with the Edit action update details" time="183.08">
+        <system-out><![CDATA[Given User is on login page screen of oilpalm project.......................passed
+When The User enter with the valid username and password input details......passed
+Then the page will be Navigated to the Dashboards home menu page details....passed
+And check with the click on the Settings module.............................passed
+Then check with click on the Role screen module name........................passed
+And check with Click on the Add Role action button..........................passed
+And check with the click on the Name input field............................passed
+And check with the Select Reported role from the Add new role popup screen..passed
+And check with the code input details.......................................passed
+Then check with the Description input details...............................passed
+And check with the Select activity right from the dropdown field............passed
+And check with the Clicking on the save action button.......................passed
+Then check with the View role Hierarchy details.............................passed
+And check with the Enable filter button.....................................passed
+Then check with the Edit action details.....................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

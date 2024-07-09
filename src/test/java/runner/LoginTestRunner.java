@@ -14,11 +14,14 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="stepdefinition",
 				  features = "feature",
 				  monochrome = true, 
-                  tags = "@Data_vali5")
+                  tags = "@data_1")
 public class LoginTestRunner {
 
 
 }
+
+
+
 
 
 

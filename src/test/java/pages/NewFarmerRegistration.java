@@ -201,7 +201,7 @@ public class NewFarmerRegistration extends DriverFactory {
 
 	public void check_with_the_Farmer_image_upload_preview() throws Throwable {
 		utilities.webDriverWait(driver, farmer_img_upload);
-		driver.findElement(farmer_img_upload).sendKeys("D:/3f/Img/farmer.jpeg");
+		driver.findElement(farmer_img_upload).sendKeys("D:/3F Main App/Img/farmer.jpeg");
 		utilities.MaximumWait(driver);
 	}
 
@@ -411,7 +411,7 @@ public class NewFarmerRegistration extends DriverFactory {
 	    String actualMessage = message.getText();
 	    System.out.println("Validation message: " + actualMessage);
 		utilities.MaximumWait(driver);
-		driver.findElement(Mobile_num_ip).sendKeys("4567891330");
+		driver.findElement(Mobile_num_ip).sendKeys("4567891333");
 		utilities.MaximumWait(driver);
 
 
@@ -540,7 +540,7 @@ public class NewFarmerRegistration extends DriverFactory {
 		WebElement message = driver.findElement(with_out_id_select);
 	    String actualMessage = message.getText();
 	    System.out.println("Validation message: " + actualMessage);
-		driver.findElement(ID_number_ip).sendKeys("259989664125");
+		driver.findElement(ID_number_ip).sendKeys("659989664825");
 		utilities.MaximumWait(driver);
 		}
 
@@ -563,7 +563,7 @@ public class NewFarmerRegistration extends DriverFactory {
 		WebElement message = driver.findElement(Without_acc_num_ip);
 	    String actualMessage = message.getText();
 	    System.out.println("Validation message: " + actualMessage);
-	    driver.findElement(account_number_ip).sendKeys("356214856325478");
+	    driver.findElement(account_number_ip).sendKeys("356214856665478");
 		utilities.MaximumWait(driver);
 
 
@@ -613,7 +613,7 @@ public class NewFarmerRegistration extends DriverFactory {
 
 	public void Check_with_the_bank_Image_upload_file() throws Throwable {
 		utilities.webDriverWait(driver, bank_img_upload);
-		driver.findElement(bank_img_upload).sendKeys("D:/3f/Img/passbook.jpeg");
+		driver.findElement(bank_img_upload).sendKeys("D:/3F Main App/Img/passbook.jpeg");
 		utilities.MaximumWait(driver);
 	}
 

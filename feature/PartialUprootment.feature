@@ -81,7 +81,7 @@ Then check with the Crop in Left out area dropdown selection
 And Check with the Survey number input validations details
 Then check with the CropIncome Dropdown selection
 
-@PartialUprootment_Data3
+@PartialUprootment_Data31
 Scenario: Verify with the Plot details by Checkbox verification
 Given the user signin with the Respective role credential details
 Then the page will Navigate to the Dashboard screen of the main pages
