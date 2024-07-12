@@ -107,7 +107,7 @@ public class ManageRole extends DriverFactory {
 		String actualMessage = message.getText();
 		System.out.println("Validation message: " + actualMessage);
 		utilities.MaximumWait(driver);
-		driver.findElement(Name_input).sendKeys("Admin Management");
+		driver.findElement(Name_input).sendKeys("Manager");
 		utilities.MaximumWait(driver);
 		
 
@@ -126,7 +126,7 @@ public class ManageRole extends DriverFactory {
 
 	public void check_with_the_code_input_details() throws Throwable {
 		utilities.webDriverWait(driver, Code_input);
-		driver.findElement(Code_input).sendKeys("Emp1");
+		driver.findElement(Code_input).sendKeys("Emp3");
 		utilities.MaximumWait(driver);
 		driver.findElement(Code_input).clear();
 		utilities.MaximumWait(driver);
@@ -134,7 +134,7 @@ public class ManageRole extends DriverFactory {
 		String actualMessage = message.getText();
 		System.out.println("Validation message: " + actualMessage);
 		utilities.MaximumWait(driver);
-        driver.findElement(Code_input).sendKeys("Employee1");
+        driver.findElement(Code_input).sendKeys("Employee3");
 		utilities.MaximumWait(driver);
 
         
