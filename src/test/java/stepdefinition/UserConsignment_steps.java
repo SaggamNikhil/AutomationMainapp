@@ -33,4 +33,28 @@ public class UserConsignment_steps {
 	public void check_with_the_Click_on_the_Assign_user_consignment_action_button() throws Throwable {
 		UserConsignment.check_with_the_Click_on_the_Assign_user_consignment_action_button();
 	}
+	@And ("^check with the Role selection from the dropdown list$")
+	public void check_with_the_Role_selection_from_the_dropdown_list() throws Throwable {
+		UserConsignment.check_with_the_Role_selection_from_the_dropdown_list();
+	}
+	@And ("^check with the user selection from the dropdown list$")
+	public void check_with_the_user_selection_from_the_dropdown_list() throws Throwable {
+		UserConsignment.check_with_the_user_selection_from_the_dropdown_list();
+	}
+	@And ("^check with the Nursery code selection from the dropdown list$")
+	public void check_with_the_Nursery_code_selection_from_the_dropdown_list() throws Throwable {
+		UserConsignment.check_with_the_Nursery_code_selection_from_the_dropdown_list();
+	}
+	@Then ("^check with the Consignment code from the Dropdown list$")
+	public void check_with_the_Consignment_code_from_the_Dropdown_list() throws Throwable {
+		UserConsignment.check_with_the_Consignment_code_from_the_Dropdown_list();
+	}
+	@When ("the popup screen clicking on the Save action button$")
+	public void the_popup_screen_clicking_on_the_Save_action_button() throws Throwable {
+		UserConsignment.the_popup_screen_clicking_on_the_Save_action_button();
+	}
+	@And ("^check with the Active grid by clicking on the edit button$")
+	public void check_with_the_Active_grid_by_clicking_on_the_edit_button() throws Throwable {
+		UserConsignment.check_with_the_Active_grid_by_clicking_on_the_edit_button();
+	}
 }

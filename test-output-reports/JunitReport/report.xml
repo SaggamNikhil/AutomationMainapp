@@ -1,12 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="99.788">
-    <testcase classname="Test Modules functionality" name="Verify with the Assign User consignment action button input details" time="98.806">
-        <system-out><![CDATA[Given User is on login page of oilpalm project page.........................passed
-When The Users enters with the valid username and password inputs data details.passed
-Then the page will be Navigated to the Dashboards home main menu pages screens.passed
-And verify with the click on the Settings module............................passed
-Then check with the click on the User consignment screen....................passed
-And check with the Click on the Assign user consignment action button.......passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="932.66">
+    <testcase classname="Test Modules functionality" name="Verify with the click on the Add Mill weighbridge action button" time="62.925">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Add mill weightbridge popup screen by Name details" time="84.994">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+And validate with the Name input field from the popup screen................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Add mill weightbridge popup screen by User name selection" time="108.886">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+And validate with the Name input field from the popup screen................passed
+Then check with the User Dropdown field from the popup screen...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Add mill weightbridge popup screen by location selection" time="120.831">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+And validate with the Name input field from the popup screen................passed
+Then check with the User Dropdown field from the popup screen...............passed
+And check with the location dropdown input field............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Add mill weightbridge popup screen by location selection 2" time="127.909">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+And validate with the Name input field from the popup screen................passed
+Then check with the User Dropdown field from the popup screen...............passed
+And check with the location dropdown input field............................passed
+And check with the Click on the save action button..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the Active grid by Edit action click" time="134.006">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+And validate with the Name input field from the popup screen................passed
+Then check with the User Dropdown field from the popup screen...............passed
+And check with the location dropdown input field............................passed
+And check with the Click on the save action button..........................passed
+Then check with the Click on the active grid Edit action button.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the edit popup screen by Is automatic check" time="140.056">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+And validate with the Name input field from the popup screen................passed
+Then check with the User Dropdown field from the popup screen...............passed
+And check with the location dropdown input field............................passed
+And check with the Click on the save action button..........................passed
+Then check with the Click on the active grid Edit action button.............passed
+And check with the Is Automatic check box selection input...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Modules functionality" name="Verify with the edit popup screen by update button click" time="151.99">
+        <system-out><![CDATA[Given User is on login page with oilpalm project page.......................passed
+When The Users enters with the valid username and password inputs data......passed
+Then the page will be Navigated to the Dashboards menu......................passed
+And verify with the click on the Settings module from the Dashboard.........passed
+Then verify with the click on the Mill weighbridge screen...................passed
+And check with the click on the Add Mill weighbridge action button..........passed
+And validate with the Name input field from the popup screen................passed
+Then check with the User Dropdown field from the popup screen...............passed
+And check with the location dropdown input field............................passed
+And check with the Click on the save action button..........................passed
+Then check with the Click on the active grid Edit action button.............passed
+And check with the Is Automatic check box selection input...................passed
+Then check with the click on the update action button.......................passed
 ]]></system-out>
     </testcase>
 </testsuite>
